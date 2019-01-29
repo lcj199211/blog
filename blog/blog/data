@@ -1,0 +1,41 @@
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : docker_db
+Source Server Version : 80013
+Source Host           : 119.23.251.118:3306
+Source Database       : test
+
+Target Server Type    : MYSQL
+Target Server Version : 80013
+File Encoding         : 65001
+
+Date: 2019-01-29 16:36:58
+*/
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for t_user
+-- ----------------------------
+DROP TABLE IF EXISTS `t_user`;
+CREATE TABLE `t_user` (
+  `userId` int(11) NOT NULL AUTO_INCREMENT,
+  `userName` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
+  PRIMARY KEY (`userId`)
+) ENGINE=InnoDB AUTO_INCREMENT=1020 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of t_user
+-- ----------------------------
+INSERT INTO `t_user` VALUES ('1000', '小明', '123', '180');
+INSERT INTO `t_user` VALUES ('1001', '小道', '123999', '180');
+INSERT INTO `t_user` VALUES ('1002', 'lalala', '123', '188');
+INSERT INTO `t_user` VALUES ('1003', '小黄', '555', '188');
+INSERT INTO `t_user` VALUES ('1004', '梁', '123', '666');
+INSERT INTO `t_user` VALUES ('1005', '明明', '123', '666');
+INSERT INTO `t_user` VALUES ('1006', '小兰', '123', '665');
+INSERT INTO `t_user` VALUES ('1017', '测试', '777', '996');
+INSERT INTO `t_user` VALUES ('1018', '小猫', '777', '996');
